@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+/*  em, strong, button, blockquote, small, strike, sub, sup, tt,  */
+*, *:before, *:after {box-sizing: border-box;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  list-style:none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+img{
+  max-width:100%;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1540px !important;
+}
+
+/*---------------start css---------------*/
+
+body{
+  background: url(../images/bg-img.jpg);
+  max-height: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.site-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.login-inner img{
+  width: 350px;
+  margin: 0 auto 60px;
+}
+.login-inner{
+  display: block;
+  text-align: center;
+}
+.login-inner input[type=text]{
+  display: block;
+  border: transparent;
+  background: #fff;
+  padding: 10px 0;
+  width: 270px;
+  margin: 0 auto;
+}
+.login-inner input[type=submit]{
+  display: block;
+  border: transparent;
+  background: #25a5f7;
+  padding: 10px 0;
+  width: 270px;
+  margin: 18px auto 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+::-webkit-input-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(44,48,54,.4);
+  text-align: center;
+  line-height: 1;
+}
+:-moz-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(44,48,54,.4);
+  text-align: center;
+  line-height: 1;
+}
+::-moz-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(44,48,54,.4); 
+  text-align: center;
+  line-height: 1;
+}
+:-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(44,48,54,.4);
+  text-align: center; 
+  line-height: 1;
+}
+.site-host{
+  height: 100vh;
+  background: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.site-host h2{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.site-host table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.site-host th{
+  text-align: left;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.site-host tbody td {
+  text-align: left;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3036;
+}
+.site-host tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+.site-host tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+.site-top{
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 80px 0 20px;
+}
+.site-top .site-icon{
+  text-align: center;
+}
+.site-top .site-icon img{
+  width: 300px;
+  text-align: center;
+}
+.site-top li{
+  max-width: 33.33%;
+  flex:0 0 33.33%;
+}
+
+/*---------------media css---------------*/
+
+@media (min-width: 768px){
+  .site-login,.site-host{
+      background-size: 60%;
+  }  
+}
+@media (max-width: 540px){
+  .login-inner img{
+    width: 290px;
+  }
+  .site-logo img{
+    width: 70px;
+  }
+  .site-host h2{
+    font-size: 24px;
+  }
+  .site-host thead{
+    display: none;
+  }
+  .site-host tbody td{
+    display: block;
+    text-align: right;
+    font-size: 16px;
+  }
+  .site-host tbody td.td-1:before {
+    content: 'Church Name';
+    float: left;
+    font-size: 14px;
+  }
+  .site-host tbody td.td-2:before {
+    content: 'Primary Contact Name';
+    float: left;
+    font-size: 14px;
+  }
+  .site-host tbody td.td-3:before {
+    content: 'Primary Contact Email';
+    float: left;
+    font-size: 14px;
+  }
+  .site-host tbody td.td-4:before {
+    content: 'Attendees';
+    float: left;
+    font-size: 14px;
+  }
+}
